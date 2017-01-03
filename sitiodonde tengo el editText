@@ -1,0 +1,12 @@
+Clase en la que lo voy a utilizar
+ActivityLogin.java
+
+ //para usar la clase TextValidator
+        mEmailView.addTextChangedListener(new TextValidator(mEmailView) {
+            @Override
+            public void validate(EditText editText, String text) {
+                //Implementamos la validación que queramos
+                if( text.contains("com"))
+                    mPasswordView.requestFocus();
+            }
+        });
